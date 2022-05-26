@@ -1,11 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>
-      My webpage
-    </title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Hashimoto Website</title>
+    <script
+      src="https://kit.fontawesome.com/30e7b33bed.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <!--Link to a normalization css file to work on all browsers -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;800&family=Source+Code+Pro:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    Hello GitHub!
+    <header>
+      <div class="logo">
+        <a href="#home" class="logo__link"><img src="img/logo.png" alt="" /></a>
+      </div>
+
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#about" class="nav__link">about</a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#footer" class="nav__link">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Lucas Hashimoto</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        software developer
+      </p>
+      <img
+        src="img/lucas1.jpg"
+        alt="a picture of Lucas Hashimoto"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="section__title section__title--portfolio">Portfolio</h2>
+      <p class="section__subtitle section__subtitle--portfolio">
+        Here is just a taste of my work
+      </p>
+
+      <div class="my-work">
+        <!-- Portfolio Item 01 -->
+        <a href="portfolio-item.html" class="my-work__item">
+          <img src="img/portfolio-01.jpg" alt="" class="my-work__img" />
+        </a>
+        <!-- Portfolio Item 02 -->
+        <a href="#" class="my-work__item">
+          <img src="img/portfolio-02.jpg" alt="" class="my-work__img" />
+        </a>
+        <!-- Portfolio Item 03 -->
+        <a href="#" class="my-work__item">
+          <img src="img/portfolio-03.jpg" alt="" class="my-work__img" />
+        </a>
+        <!-- Portfolio Item 04 -->
+        <a href="#" class="my-work__item">
+          <img src="img/portfolio-04.jpg" alt="" class="my-work__img" />
+        </a>
+        <!-- Portfolio Item 05 -->
+        <a href="#" class="my-work__item">
+          <img src="img/portfolio-05.jpg" alt="" class="my-work__img" />
+        </a>
+        <!-- Portfolio Item 06 -->
+        <a href="#" class="my-work__item">
+          <img src="img/portfolio-06.jpg" alt="" class="my-work__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">About me</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Developer based out of Edmonton
+      </p>
+      <div class="about-me__body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida
+          neque quis est dictum aliquet. Maecenas placerat, felis interdum
+          iaculis mollis, quam elit pellentesque tellus, vel laoreet est ligula
+          id dolor.
+        </p>
+        <p>
+          In consectetur orci et elit interdum placerat. Cras placerat volutpat
+          dignissim. Quisque ornare facilisis urna ut semper. Phasellus laoreet
+          a nisi quis interdum. Praesent non orci nec mi elementum consequat.
+          Proin in nibh erat.
+        </p>
+      </div>
+      <img
+        src="img/landscape.jpg"
+        alt="a picture of Lucas landscape"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- My projects -->
+    <section class="my-projects" id="projects">
+      <h2 class="section__title section__title--projects">Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Design + Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <!-- / project -->
+
+        <div class="project">
+          <h3>E-Commerce</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <!-- / project -->
+
+        <div class="project">
+          <h3>WordPress</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <!-- / project -->
+      </div>
+      <!-- / projects -->
+
+      <a href="#portfolio" class="btn">My Work</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <a href="mailto:lucasyoshio0@gmail.com" class="footer__link"
+        >lucasyoshio0@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://instagram.com" class="social-list__link">
+            <i class="fa-brands fa-instagram-square"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://linkedin.com" class="social-list__link">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://github.com" class="social-list__link">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://twitter.com" class="social-list__link">
+            <i class="fa-brands fa-twitter-square"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
